@@ -62,7 +62,7 @@ public class Libro extends Libreria {
 		System.out.println("Autore: " + getAuthor());
 		System.out.println("Genere: " + getGenre());
 		System.out.println("ISBN: 978-" + getIsbn());
-		System.out.println("Costo: " + getPrice());
+		System.out.println("Costo: " + getPrice() + " Euro");
 		System.out.println("---------------");
 	}
 
