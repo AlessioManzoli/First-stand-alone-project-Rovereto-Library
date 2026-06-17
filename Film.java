@@ -3,15 +3,17 @@ package main;
 public class Film extends Libreria{
 
     private String nomeFilm;
+	private int annoFilm;
     private String registaFilm;
     private String protagonistaFilm;
 	private String genereFilm;
 	private double costoFilm;
 	
-	Film (String nomeFilm, String autoreFilm, String genereFilm, String protagonistaFilm, double costoFilm) {
+	Film (String nomeFilm,int annoFilm, String registaFilm, String genereFilm, String protagonistaFilm, double costoFilm) {
 		
 		this.nomeFilm = nomeFilm;
-		this.registaFilm = autoreFilm;
+		this.annoFilm = annoFilm;
+		this.registaFilm = registaFilm;
 		this.genereFilm = genereFilm;
         this.protagonistaFilm = protagonistaFilm;
 		this.costoFilm = costoFilm;
@@ -23,6 +25,14 @@ public class Film extends Libreria{
 	
 	public void setName(String nomeFilm) {
 		this.nomeFilm = nomeFilm;
+	}
+
+	public int getYear() {
+		return annoFilm;
+	}
+
+	public void setYear(int annoFilm) {
+		this.annoFilm = annoFilm;
 	}
 	
 	public String getDirector() {
@@ -60,6 +70,7 @@ public class Film extends Libreria{
 	public void stampaFilm() {
 		System.out.println("Titolo: " + getName());
 		System.out.println("Regista: " + getDirector());
+		System.out.println("Protagonista: " + getProtagonist());
 		System.out.println("Genere: " + getGenre());
 		System.out.println("Costo: " + getPrice() + " Euro");
 		System.out.println("---------------");
