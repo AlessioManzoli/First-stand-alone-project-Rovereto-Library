@@ -19,7 +19,6 @@ public class Main {
 			System.out.println("------------------------------------");
 
 			try{
-				
 				do {
 					decisione = scanner.nextInt();
 					if (decisione < 1 || decisione > 2) {
